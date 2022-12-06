@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tweet Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h2 class="welcome">Welcome</h2>
+      <div class="header-names">
+        <p id="paragraph-name"></p>
+        <div class="circle">
+          <p id="paragraph-initial"></p>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="form">
+        <label class="labels" for="txt-name">Type your name</label>
+        <input class="input inputs" type="text" name="txt-name" id="txt-name" />
+
+        <label class="labels" for="txt-comment">Comment</label>
+        <textarea class="textarea inputs" name="txt-comment" id="txt-comment" cols="15" rows="10" maxlength="280"></textarea>
+
+        <p class="counter">Counter ➡ <span id="span-counter">280</span></p>
+
+        <div class="buttons">
+          <button class="btn-send button" id="btn-send">Send</button>
+          <button class="converter button" id="btn-convert" value="true">Upper case</button>
+        </div>
+      </div>
+
+      <div>
+        <p class="result-comment" id="result-comment"></p>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
